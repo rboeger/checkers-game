@@ -1,0 +1,129 @@
+body {
+    background-color: rgb(232, 232, 232)
+}
+
+html {
+    height: 98vh;
+}
+
+#game-board {
+    max-height: 80vh;
+    max-width: 98vw;
+    aspect-ratio: 1 / 1;
+    border: solid black 5px;
+    box-shadow: rgb(176, 176, 176) 15px 15px 10px;
+    margin: auto;
+}
+
+.play-space {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    width: 98vw;
+    height: 4vh;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 1rem; 
+}
+
+#turn-label {
+    font-size: 2.5rem;
+    width: 98vw;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.player1-piece-base {
+    background-color: red;
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.player1-piece {
+    height: 85%;
+    width: 85%;
+    border: solid black 2px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.8) 8px 8px 12px;
+    position: relative;
+    top: 6%;
+    left: 6%;
+    transition: 100ms;
+}
+
+.player1-piece-rim {
+    background: repeating-linear-gradient(45deg, #ff2c2c, #545454 2px);
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.player1-piece-center {
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+    background-color: rgba(255, 64, 64, 0.7);
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.player2-piece-base {
+    background-color: rgb(21, 21, 21);
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    position: absolute;
+}
+
+.player2-piece {
+    height: 85%;
+    width: 85%;
+    border: solid black 2px;
+    border-radius: 50%;
+    position: relative;
+    top: 6%;
+    left: 6%;
+    box-shadow: rgba(0, 0, 0, 0.8) 8px 8px 12px;
+    transition: 100ms;
+}
+
+.player2-piece-rim {
+    background: repeating-linear-gradient(45deg, #000000, #545454 2px);
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.player2-piece-center {
+    height: 60%;
+    width: 60%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    border-radius: 50%;
+    background-color: rgba(54, 54, 54, 0.7);
+}
+
+.player-piece-king {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 33%;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+
